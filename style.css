@@ -1,0 +1,43 @@
+.l-header {
+    grid-area: my-header;
+}
+.l-nav {
+    grid-area: my-nav;
+}
+.l-main {
+    grid-area: my-main;
+
+overflow-y: 15 px;
+}
+.l-aside {
+    grid-area: my-aside;
+}
+.l-section {
+    grid-area: my-section;
+}
+.l-footer {
+    grid-area: my-footer;
+}
+.box-init {
+    font-size: larger; /* определяет размер шрифта */
+    color: #fff; /* определяет цвет текста */
+    border-radius: 10px; /* скругление углов */
+    background-color: rgb(238, 26, 210); /* цвет фона */ 
+    border: 1px solid black; /* граница блока */
+    padding: 10px; /* внутренние отступы */
+    /*  выравнивание текста по центру блока с помощью CSS Flexbox  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        "my-header my-header my-header"
+        "my-aside my-section my-nav"
+        "my-main  my-section my-nav"
+        "my-footer my-footer my-footer";
+
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
