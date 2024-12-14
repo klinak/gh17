@@ -30,7 +30,7 @@ overflow-y: 15 px;
     align-items: center;
     justify-content: center;
 }
-.grid-init grid {
+.grid {
     display: grid;
     grid-gap: 10px;
     grid-template-areas:
@@ -38,6 +38,6 @@ overflow-y: 15 px;
         "my-aside my-section my-nav"
         "my-main  my-section my-nav"
         "my-footer my-footer my-footer";
-overflow-y: auto;
+
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
